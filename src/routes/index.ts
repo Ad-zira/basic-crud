@@ -1,7 +1,19 @@
-import express from 'express'
+const express = require('express')
 const router = express.Router();
-import authRouter from './authRouter'
+// const authRouter = require('./authRouter')
+const authController = require('../controllers/authController')
 
-router.use('/api', authRouter)
+// router.use('/api', authRouter)
+// const authentication = require('../middlewares/auth')
 
-export default router
+router.get('/login', authController.loginService)
+router.post('/register', authController.registerService)
+
+// router.use(authentication)
+
+router.get('/employees', authController.getAllEmployees)
+router.get('/validate/:id', authController.validateEmployee)
+router.put('/employee/:id', authController.updateEmployee)
+router.delete('/employee/:id', authController.removeEmployee)
+
+module.exports = router

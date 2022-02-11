@@ -1,7 +1,7 @@
-const { createLogger, transports, format } = require('winston');
+const { createLogger, transports, format, exitOnError } = require('winston');
 import path from 'path';
 
-const { combine, timestamp, errors, json, prettyPrint } = format;
+const { combine, timestamp, errors, json, prettyPrint, label } = format;
 
 function logger() {  
   return createLogger({
@@ -28,18 +28,15 @@ function logger() {
   
       new transports.Console(
         { 
-          // level: 'silly',
-          // format: combine(
-          //   format.printf(x => `[${Date()}], [${x.message}]`),
-          // )
           format: combine(
             json(),
             prettyPrint()
           )
         }
       ),
-    ]
+    ],
+    exitOnError: false,
   })
 }
 
-export default logger;
+module.exports = logger;
