@@ -20,12 +20,14 @@ let loggerApp = new winston.createLogger({
   format: winston.format.combine(
     winston.format.json(),
     winston.format.errors({stack: true}),
-    // winston.format.prettyPrint()
+    winston.format.prettyPrint()
   ),
   transports: [
       new (winston.transports.Console)(),
       new (winston.transports.File)({ 
-        filename: 'logging/app.log' 
+        filename: 'logging/app.log',
+        handleRejections: true,
+        handleExceptions: true
       })
   ]
 })

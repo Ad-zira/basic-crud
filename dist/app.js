@@ -18,11 +18,13 @@ const port = process.env.PORT || 3000;
 let loggerApp = new winston.createLogger({
     exitOnError: false,
     level: 'info',
-    format: winston.format.combine(winston.format.json(), winston.format.errors({ stack: true })),
+    format: winston.format.combine(winston.format.json(), winston.format.errors({ stack: true }), winston.format.prettyPrint()),
     transports: [
         new (winston.transports.Console)(),
         new (winston.transports.File)({
-            filename: 'logging/app.log'
+            filename: 'logging/app.log',
+            handleRejections: true,
+            handleExceptions: true
         })
     ]
 });

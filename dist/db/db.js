@@ -21,7 +21,7 @@ const pool = new Pool({
     host: env.DB_HOST || 'localhost'
 });
 // pool.query(
-//   `CREATE DOMAIN national_id AS INTEGER CHECK(VALUE ~* '^\\d{6}([04][1-9]|[1256][0-9]|[37][01])(0[1-9]|1[0-2])\d{2}\d{4}$'); CREATE DOMAIN nationalid CREATE TABLE IF NOT EXISTS employees (id SERIAL PRIMARY KEY, national_id INTEGER, name VARCHAR(255), email VARCHAR(255), password VARCHAR(255), "phoneNo" VARCHAR(255))`,
+//   `CREATE DOMAIN national_id AS INTEGER CHECK(VALUE ~* '^\\d{6}([04][1-9]|[1256][0-9]|[37][01])(0[1-9]|1[0-2])\d{2}\d{4}$'); CREATE DOMAIN nationalid CREATE TABLE IF NOT EXISTS employees (id SERIAL PRIMARY KEY, national_id INTEGER, name VARCHAR(255), email VARCHAR(255), password VARCHAR(255), "phoneNo" VARCHAR(255), "userId" NUMERIC)`,
 // )
 function query(queryText) {
     return __awaiter(this, void 0, void 0, function* () {

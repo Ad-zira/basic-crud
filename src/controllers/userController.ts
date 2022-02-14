@@ -1,9 +1,16 @@
 import { Request, Response, NextFunction } from "express";
 import winston, {createLogger, format, loggers} from "winston";
-const { json, combine, prettyPrint, errors, printf, colorize } = format;
+const { 
+  simple, 
+  combine, 
+  json, 
+  prettyPrint,  
+  errors, 
+  printf, 
+  colorize 
+} = format;
 
 // const logger = require('../logger')
-const {comparePassword} = require('../helpers/comparePassword')
 const {signToken, verifyToken} = require('../helpers/jwt')
 const auth = require('../middlewares/auth')
 const pool = require('../db/db')
@@ -16,11 +23,10 @@ const logFormat = printf(({ level, message, timestamp, stack }) => {
 
 let logger = createLogger({
   exitOnError: false,
-  level: 'info',
+  level: 'debug',
   transports: [
-    // new winston.transports.Console(),
     new winston.transports.File({ 
-      filename: 'logging/controller.log' ,
+      filename: 'logging/controller.log',
       format: combine(
         // colorize(),
         json(), 
@@ -28,8 +34,30 @@ let logger = createLogger({
         errors({stack: true}),
         logFormat
       ),
+    }),
+    new winston.transports.Console({
+      format: combine(
+        colorize(),
+        simple(),
+        logFormat
+      )
     })
-]
+  ],
+  exceptionHandlers: [
+    new winston.transports.File({ 
+      filename: 'logging/exceptions.log',
+      level: 'http',
+      format: logFormat
+    }),
+    new winston.transports.Console({
+      format: combine(
+        colorize(),
+        simple(),
+        errors({stack: true}),
+        logFormat
+      )
+    })
+  ]
 })
 
 class userController {
@@ -39,37 +67,44 @@ class userController {
 
       const foundUser = await pool.query('SELECT * FROM employees WHERE email = $1', [`${email}`])
       
-      if (!foundUser) {
-        logger.error('Email not registered')
-      }
-
       const foundUserInfo = foundUser.rows[0]
-
-      if (!comparePassword(password, foundUserInfo.password)) {
-        logger.error("Wrong password")
-        throw { name: "WrongPassword" };
-      }
+      
+      if (!foundUserInfo) {
+        logger.warn('Email not registered')
+        return res.status(404).json({
+          code: "ERR4001",
+          message: "Email not registered",
+          type: "Not found"
+        })
+      } 
+      if (!password || password !== foundUserInfo.password) {
+        logger.info("Wrong password")
+        return res.status(403).json({
+          code: "ERR4002",
+          message: "Sorry, wrong password",
+          type: "NotFound"
+        })
+      } 
 
       const userLogin:any = {
-        id: foundUser.id,
-        email: foundUser.email,
-        userId: foundUser.userId
+        id: foundUserInfo.id,
+        email: foundUserInfo.email,
+        userId: foundUserInfo.userId
       };
-
-      const token = signToken(userLogin);
-
+      const token: String = signToken(userLogin);
+      
       res.status(200).json({
         payload: [
           {
-            userId: foundUser.userId,
+            userId: foundUserInfo.userId,
             tokens: {
               accessToken: token,
             },
             userInfo: {
               personalInfo: {
-                email: foundUser.email,
-                phoneNo: foundUser.phoneNo,
-                name: foundUser.name,
+                name: foundUserInfo.name,
+                email: foundUserInfo.email,
+                phoneNo: foundUserInfo.phoneNo,
               },
             },
           },
@@ -77,17 +112,14 @@ class userController {
         errors: [],
         success: true,
       });
-
-      // const userjwt = verifyToken(email)
-
-      // res.status(200).json({
-      //   success: true,
-      //   message: 'The token of your user credential is ...',
-      //   userjwt,
-      //   version: '1.0.0'
-      // })
-    } catch (error) {
+    } catch (error: any) {
       logger.error(error)
+      res.status(403).json({
+        code: "ERR4005",
+        message: "Cannot find any employee",
+        type: "Forbidden"
+      })
+      next(error)
     }
   }
 
@@ -96,25 +128,30 @@ class userController {
       const {national_id, name, email, phoneNo, password } = req.body;
       let userId = randomNumber();
       
-      const user = await pool.query(`INSERT INTO employees (national_id, name, email, "phoneNo", password) VALUES ($1, $2, $3, $4, $5);`, [`${national_id}`, `${name}`, `${email}`, `${phoneNo}`, `${password}`])
+      const user = await pool.query(`INSERT INTO employees (national_id, name, email, "phoneNo", password, "userId") VALUES ($1, $2, $3, $4, $5, $6);`, [`${national_id}`, `${name}`, `${email}`, `${phoneNo}`, `${password}`, `${userId}`])
 
       logger.info("Created User", user)
-
+      
       res.status(200).send({
         payload: [{}],
         errors: [],
         success: true,
         userId
       })
-    } catch (error) {
+    } catch (error: any) {
       logger.error(error)
+      res.status(500).json({
+        code: "ERR5000",
+        message: "Cannot add employees",
+        type: "Internal Server Error"
+      })
       next(error)
     }
   }
 
   static async getAllEmployees(req: Request, res: Response, next: NextFunction) {
     try {
-      const employee = await pool.query('SELECT * FROM employees ORDER BY id ASC')
+      const employee = await pool.query('SELECT * FROM employees ORDER BY name ASC')
 
       logger.info("these are the employees", employee.rows)
 
@@ -127,8 +164,13 @@ class userController {
         success: true,
         message: 'Getting all the employees',
       })
-    } catch (error) {
+    } catch (error: any) {
       logger.error(error)
+      res.status(403).json({
+        code: "ERR4000",
+        message: "Cannot retrieve employees",
+        type: "Forbidden"
+      })
       next(error)
     }
   }
@@ -163,8 +205,13 @@ class userController {
         message: `Employee ${id} Validated`,
         version: '1.0.0'
       })
-    } catch (error) {
+    } catch (error: any) {
       logger.error(error)
+      res.status(403).json({
+        code: "ERR4003",
+        message: "Can not validate this employee",
+        type: "Forbidden"
+      })
       next(error)
     }
     
@@ -175,44 +222,61 @@ class userController {
       const id = parseInt(req.params.id)
       const { name, phoneNo, password } = req.body;
 
-      if (name && phoneNo && password) {
-        const updateUser = await pool.query('UPDATE employees SET name = $1, "phoneNo" = $2, password = $3 WHERE id = $4', [name, phoneNo, password, id])
-        const updatedUser = updateUser.rows[0]
-        console.log("This is updated User", updatedUser)
-        // const name = updatedUser
-        // logger.info('this is an updated user with new name , phoneNo, and password')
+      const findUser = await query(`select * from employees where id='${id}'`);
 
-        return res.status(204).json({
-          payload: [{
-            id,
-            personalInfo: {
-              name: updatedUser.name,
-              phoneNo: updatedUser.phoneNo,
-              password: updatedUser.password
+      if (findUser.rowCount === 0) {
+        res.status(404).json({
+          "payload": [
+            {
+              "Message": "Employee Not Found"
             }
-          }],
-          errors: [],
-          success: true
+          ],
+          "errors": [],
+          "success": false
         })
-      } else if (name && phoneNo) {
-        const updateUser = await pool.query('UPDATE employees SET name = $1, "phoneNo" = $2 WHERE id = $3', [name, phoneNo, id])
-        logger.info('this is an updated user with new name and phone number')
-        const updatedUser = updateUser.rows[0]
-        return res.status(204).json({
-          payload: [{
-            id,
-            personalInfo: {
-              name: updatedUser.name,
-              phoneNo: updatedUser.phoneNo,
-            }
-          }],
-          errors: [],
-          success: true
-        })
+      } else { 
+        if (name && phoneNo && password) {
+          const updateUser = await pool.query('UPDATE employees SET name = $1, "phoneNo" = $2, password = $3 WHERE id = $4', [name, phoneNo, password, id])
+          const updatedUser = updateUser.rows[0]
+          // const name = updatedUser
+          // logger.info('this is an updated user with new name , phoneNo, and password')
+
+          return res.status(204).json({
+            payload: [{
+              id,
+              personalInfo: {
+                name: updatedUser.name,
+                phoneNo: updatedUser.phoneNo,
+                password: updatedUser.password
+              }
+            }],
+            errors: [],
+            success: true
+          })
+        } else if (name && phoneNo) {
+          const updateUser = await pool.query('UPDATE employees SET name = $1, "phoneNo" = $2 WHERE id = $3', [name, phoneNo, id])
+          logger.info('this is an updated user with new name and phone number')
+          const updatedUser = updateUser.rows[0]
+          return res.status(204).json({
+            payload: [{
+              id,
+              personalInfo: {
+                name: updatedUser.name,
+                phoneNo: updatedUser.phoneNo,
+              }
+            }],
+            errors: [],
+            success: true
+          })
+        }
       }
-
-    } catch (error) {
+    } catch (error: any) {
       logger.error(error)
+      res.status(403).json({
+        code: "ERR4003",
+        message: "Can not validate this employee",
+        type: "Forbidden"
+      })
       next(error)
     }
   }
@@ -220,18 +284,33 @@ class userController {
   static async removeEmployee(req: Request, res: Response, next: NextFunction) {
     try {
       const id = parseInt(req.params.id);
+      const { userId } = req.body;
 
-      await pool.query('DELETE FROM employees WHERE id = $1', [id], (error:any, results:any) => {
+      await pool.query('DELETE FROM employees WHERE id = $1 AND "userId" = $2', [id, userId], (error:any, results:any) => {
         if (error) {
           logger.error('Cannot delete, please try again')
+          res.status(403).json({
+            payload: [{}],
+            error: [ {
+              code: "ERR4006",
+              message: "Cannot delete the user, please try again",
+              type: "Forbidden"
+            }],
+            success: false
+          })
         }
       })
       res.status(201).send({
         success: true,
-        message: `Employee with ${id} deleted`,
+        message: `Employee deleted`,
       })
     } catch (error) {
       logger.error(error)
+      res.status(403).json({
+        code: "ERR4006",
+        message: "Can't delete the user",
+        type: "Forbidden"
+      })
       next(error)
     }
   }
