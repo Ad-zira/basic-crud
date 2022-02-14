@@ -14,7 +14,7 @@ const authentication = (req, res) => __awaiter(void 0, void 0, void 0, function*
     try {
         const { access_token: token } = req.headers;
         if (!token) {
-            // logger.error('InvalidInput')
+            logger.error('InvalidInput');
         }
     }
     catch (error) {

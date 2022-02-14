@@ -1,26 +1,26 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const { createLogger, transports, format, exitOnError } = require('winston');
-const { combine, timestamp, errors, json, prettyPrint, label } = format;
+const winston_1 = require("winston");
+const { combine, timestamp, errors, json, prettyPrint, label } = winston_1.format;
 function logger() {
-    return createLogger({
+    return (0, winston_1.createlogger)({
         // level: 'verbose',
         format: combine(timestamp(), errors({ stack: true }), json()),
         defaultMeta: { service: 'user-service' },
         transports: [
-            new transports.File({
+            new winston_1.transports.File({
                 filename: 'logging/warn.log',
                 level: 'warn',
             }),
-            new transports.File({
+            new winston_1.transports.File({
                 filename: 'logging/error.log',
                 level: 'error',
             }),
-            new transports.File({
+            new winston_1.transports.File({
                 filename: 'logging/misc/debug.log',
                 level: 'debug',
             }),
-            new transports.Console({
+            new winston_1.transports.Console({
                 format: combine(json(), prettyPrint())
             }),
         ],

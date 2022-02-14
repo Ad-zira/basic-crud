@@ -6,9 +6,8 @@ const authentication = async (req: Request, res: Response) => {
     const { access_token: token } = req.headers
 
     if (!token) {
-      // logger.error('InvalidInput')
+      logger.error('InvalidInput')
     }
-
 
   } catch (error) {
     logger.error(error)    

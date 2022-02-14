@@ -11,7 +11,8 @@ authRouter.post('/login', authController.loginService);
 authRouter.post('/register', authController.registerService);
 // authRouter.use(authentication)
 authRouter.get('/employees', authController.getAllEmployees);
+authRouter.post('/employees', authController.registerNewEmployee);
 authRouter.get('/validate/:id', authController.validateEmployee);
-authRouter.put('/employee/:id', authController.updateEmployee);
+authRouter.put('/update/:id', authController.updateEmployee);
 authRouter.delete('/employee/:id', authController.removeEmployee);
 exports.default = authRouter;
