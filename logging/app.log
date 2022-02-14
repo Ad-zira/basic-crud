@@ -5,3 +5,12 @@
 {"level":"info","message":"::1 - - [14/Feb/2022:10:20:00 +0000] \"PUT /employee/1?name=ariza&phoneNo=085721004043&password=passwordya HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.29.0\"\n"}
 {"level":"info","message":"::1 - - [14/Feb/2022:10:21:19 +0000] \"PUT /employee/1 HTTP/1.1\" 500 1088 \"-\" \"PostmanRuntime/7.29.0\"\n"}
 {"level":"info","message":"::1 - - [14/Feb/2022:10:22:49 +0000] \"PUT /employee/1 HTTP/1.1\" 500 557 \"-\" \"PostmanRuntime/7.29.0\"\n"}
+{"level":"info","message":"::1 - - [14/Feb/2022:10:29:58 +0000] \"GET /validate/4 HTTP/1.1\" 200 218 \"-\" \"PostmanRuntime/7.29.0\"\n"}
+{"level":"info","message":"::1 - - [14/Feb/2022:10:30:04 +0000] \"GET /validate/4 HTTP/1.1\" 200 218 \"-\" \"PostmanRuntime/7.29.0\"\n"}
+{"level":"info","message":"::1 - - [14/Feb/2022:10:30:13 +0000] \"GET /validate/3 HTTP/1.1\" 200 221 \"-\" \"PostmanRuntime/7.29.0\"\n"}
+{"level":"info","message":"::1 - - [14/Feb/2022:10:30:21 +0000] \"GET /employees HTTP/1.1\" 200 610 \"-\" \"PostmanRuntime/7.29.0\"\n"}
+{"level":"info","message":"::1 - - [14/Feb/2022:10:30:31 +0000] \"GET /validate/4 HTTP/1.1\" 200 218 \"-\" \"PostmanRuntime/7.29.0\"\n"}
+{"level":"info","message":"::1 - - [14/Feb/2022:10:31:10 +0000] \"GET /validate/4 HTTP/1.1\" 200 218 \"-\" \"PostmanRuntime/7.29.0\"\n"}
+{"level":"info","message":"::1 - - [14/Feb/2022:10:31:48 +0000] \"POST /register HTTP/1.1\" 200 61 \"-\" \"PostmanRuntime/7.29.0\"\n"}
+{"level":"info","message":"::1 - - [14/Feb/2022:10:32:01 +0000] \"GET /employees HTTP/1.1\" 200 744 \"-\" \"PostmanRuntime/7.29.0\"\n"}
+{"level":"info","message":"::1 - - [14/Feb/2022:10:32:55 +0000] \"GET /validate/5 HTTP/1.1\" 200 226 \"-\" \"PostmanRuntime/7.29.0\"\n"}
