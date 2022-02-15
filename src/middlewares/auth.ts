@@ -1,7 +1,8 @@
-import { Request, Response } from "express"
-const logger = require('../logs')
+import { NextFunction, Request, Response } from "express"
+const logger = require('../logger')
+const { verifyToken } = require('../helpers/jwt')
 
-const authentication = async (req: Request, res: Response) => {
+const authorization = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const { access_token: token } = req.headers
 
@@ -9,9 +10,18 @@ const authentication = async (req: Request, res: Response) => {
       logger.error('InvalidInput')
     }
 
+    const user = verifyToken(token)
+    if (user.userId !== req.body.userId) {
+      res.status(404).send({
+        message: "User not found",
+
+      })
+    }
+    next()
   } catch (error) {
-    logger.error(error)    
+    logger.error(error) 
+    next(error)   
   }
 }
 
-export default authentication;
+module.exports = authorization;

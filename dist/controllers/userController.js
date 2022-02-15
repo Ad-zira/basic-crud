@@ -187,8 +187,9 @@ class userController {
                         payload: [{}],
                         error: [
                             {
+                                code: "ERR4004",
+                                message: "you must insert email, phoneNo, and national_id",
                                 type: "NotFound",
-                                message: "you must insert email, phoneNo, and national_id"
                             }
                         ],
                         success: false
@@ -207,10 +208,10 @@ class userController {
             }
             catch (error) {
                 logger.error(error);
-                res.status(403).json({
-                    code: "ERR4003",
+                res.status(500).json({
+                    code: "ERR5000",
                     message: "Can not validate this employee",
-                    type: "Forbidden"
+                    type: "Internal Server Error"
                 });
                 next(error);
             }
@@ -220,22 +221,22 @@ class userController {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 const id = parseInt(req.params.id);
-                const { name, phoneNo, password } = req.body;
-                const findUser = yield query(`select * from employees where id='${id}'`);
+                const { name, phoneNo, password, userId } = req.body;
+                const findUser = yield query(`SELECT * FROM employees WHERE id=${id}`);
                 if (findUser.rowCount === 0) {
                     res.status(404).json({
-                        "payload": [
+                        payload: [
                             {
                                 "Message": "Employee Not Found"
                             }
                         ],
-                        "errors": [],
-                        "success": false
+                        errors: [],
+                        success: false
                     });
                 }
                 else {
                     if (name && phoneNo && password) {
-                        const updateUser = yield pool.query('UPDATE employees SET name = $1, "phoneNo" = $2, password = $3 WHERE id = $4', [name, phoneNo, password, id]);
+                        const updateUser = yield pool.query('UPDATE employees SET name = $1, "phoneNo" = $2, password = $3 WHERE "userId" = $4', [name, phoneNo, password, userId]);
                         const updatedUser = updateUser.rows[0];
                         // const name = updatedUser
                         // logger.info('this is an updated user with new name , phoneNo, and password')
@@ -286,31 +287,51 @@ class userController {
             try {
                 const id = parseInt(req.params.id);
                 const { userId } = req.body;
-                yield pool.query('DELETE FROM employees WHERE id = $1 AND "userId" = $2', [id, userId], (error, results) => {
-                    if (error) {
-                        logger.error('Cannot delete, please try again');
-                        res.status(403).json({
-                            payload: [{}],
-                            error: [{
-                                    code: "ERR4006",
-                                    message: "Cannot delete the user, please try again",
-                                    type: "Forbidden"
-                                }],
-                            success: false
-                        });
-                    }
-                });
-                res.status(201).send({
-                    success: true,
-                    message: `Employee deleted`,
-                });
+                const selectedUser = yield pool.query('SELECT * FROM employees WHERE id = $1 ', [id]);
+                let userData = selectedUser.rows[0];
+                if (!userId) {
+                    res.status(403).json({
+                        message: "Please provide the userId to delete the Employee"
+                    });
+                }
+                else if (selectedUser.rowCount === 0) {
+                    res.status(404).json({
+                        payload: [{}],
+                        errors: [{
+                                message: "Employee does not exist"
+                            }]
+                    });
+                }
+                else if (userId !== userData.userId) {
+                    res.status(403).json({
+                        payload: [{}],
+                        errors: [
+                            {
+                                code: "ERR4009",
+                                message: "Data doesn't match",
+                                type: "Forbidden"
+                            }
+                        ],
+                        success: false,
+                    });
+                }
+                if (userId === userData.userId) {
+                    yield pool.query(`DELETE FROM employees WHERE "userId" = ${userId}`);
+                    res.status(201).send({
+                        payload: [{
+                                message: `Employee deleted with corresponding name: ${userData.name}`,
+                            }],
+                        errors: [{}],
+                        success: true,
+                    });
+                }
             }
             catch (error) {
                 logger.error(error);
-                res.status(403).json({
-                    code: "ERR4006",
-                    message: "Can't delete the user",
-                    type: "Forbidden"
+                res.status(500).json({
+                    code: "ERR5000",
+                    message: "Can't delete employee",
+                    type: "Internal Server Error"
                 });
                 next(error);
             }
@@ -318,9 +339,3 @@ class userController {
     }
 }
 module.exports = userController;
-// function password(password: any, secretKey: any) {
-//   throw new Error("Function not implemented.");
-// }
-// function secretKey(password: any, secretKey: any) {
-//   throw new Error("Function not implemented.");
-// }

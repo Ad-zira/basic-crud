@@ -9,16 +9,25 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const logger = require('../logs');
-const authentication = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+const logger = require('../logger');
+const { verifyToken } = require('../helpers/jwt');
+const authorization = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const { access_token: token } = req.headers;
         if (!token) {
             logger.error('InvalidInput');
         }
+        const user = verifyToken(token);
+        if (user.userId !== req.body.userId) {
+            res.status(404).send({
+                message: "User not found",
+            });
+        }
+        next();
     }
     catch (error) {
         logger.error(error);
+        next(error);
     }
 });
-exports.default = authentication;
+module.exports = authorization;

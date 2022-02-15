@@ -1,15 +1,14 @@
 const express = require('express')
 const router = express.Router();
-// const authRouter = require('./authRouter')
 const userController = require('../controllers/userController')
 
 // router.use('/api', authRouter)
-// const authentication = require('../middlewares/auth')
+// const authorization = require('../middlewares/auth')
 
 router.post('/login', userController.loginService)
 router.post('/register', userController.registerService)
 
-// router.use(authentication)
+// router.use(authorization)
 
 router.get('/employees', userController.getAllEmployees)
 router.get('/validate/:id', userController.validateEmployee)

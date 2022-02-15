@@ -123,3 +123,1410 @@
   message: '::1 - - [14/Feb/2022:15:40:09 +0000] "POST /register HTTP/1.1" 200 61 "-" "PostmanRuntime/7.29.0"\n',
   level: 'info'
 }
+{
+  message: '::1 - - [14/Feb/2022:16:27:57 +0000] "POST /register HTTP/1.1" 200 61 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:16:34:22 +0000] "GET /employees HTTP/1.1" 200 1432 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:16:36:47 +0000] "POST /register HTTP/1.1" 200 61 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:16:37:15 +0000] "POST /login HTTP/1.1" 404 70 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:16:37:32 +0000] "POST /login HTTP/1.1" 200 370 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:16:40:37 +0000] "GET /employees HTTP/1.1" 200 1590 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:16:40:46 +0000] "DELETE /10 HTTP/1.1" 404 144 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:16:42:48 +0000] "DELETE /10 HTTP/1.1" 404 144 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:16:42:54 +0000] "DELETE /10 HTTP/1.1" 404 144 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:16:49:08 +0000] "DELETE /10 HTTP/1.1" 404 144 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:16:49:54 +0000] "DELETE /10 HTTP/1.1" 404 144 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:16:50:56 +0000] "DELETE /10 HTTP/1.1" 404 144 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:16:58:20 +0000] "DELETE /10 HTTP/1.1" 404 144 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:00:38 +0000] "DELETE /10 HTTP/1.1" 404 144 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:01:35 +0000] "DELETE /employee/10 HTTP/1.1" 500 62 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:02:55 +0000] "DELETE /employee/10 HTTP/1.1" 500 62 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:04:06 +0000] "DELETE /employee/10 HTTP/1.1" 500 62 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:04:45 +0000] "DELETE /employee/10 HTTP/1.1" 201 73 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:05:03 +0000] "GET /employees HTTP/1.1" 200 1432 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:05:52 +0000] "POST /register HTTP/1.1" 200 61 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:06:39 +0000] "DELETE /employee/10 HTTP/1.1" 500 62 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:08:21 +0000] "DELETE /employee/9 HTTP/1.1" 500 62 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:08:36 +0000] "DELETE /employee/10 HTTP/1.1" 500 62 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:09:05 +0000] "DELETE /employee/11 HTTP/1.1" 500 62 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:09:14 +0000] "DELETE /employee/11 HTTP/1.1" 201 73 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:16:03 +0000] "POST /register HTTP/1.1" 200 61 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:16:15 +0000] "DELETE /employee/12 HTTP/1.1" 404 153 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:16:26 +0000] "GET /employee/12 HTTP/1.1" 200 - "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:16:52 +0000] "GET /employees HTTP/1.1" 200 1590 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:17:18 +0000] "POST /login HTTP/1.1" 200 370 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:17:56 +0000] "GET /employee/12 HTTP/1.1" 200 46 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:18:47 +0000] "GET /employee/12 HTTP/1.1" 200 - "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:19:47 +0000] "GET /employee/12 HTTP/1.1" 200 46 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:20:15 +0000] "GET /employee/12 HTTP/1.1" 200 48 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:20:32 +0000] "GET /employee/12 HTTP/1.1" 500 83 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:21:07 +0000] "GET /employee/12 HTTP/1.1" 200 48 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:22:02 +0000] "GET /employee/12 HTTP/1.1" 500 83 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:22:05 +0000] "GET /employee/12 HTTP/1.1" 200 2070 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:22:39 +0000] "GET /employee/12 HTTP/1.1" 403 45 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:23:29 +0000] "GET /employee/12 HTTP/1.1" 500 83 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:32:44 +0000] "POST /register HTTP/1.1" 200 61 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:33:40 +0000] "POST /register HTTP/1.1" 200 61 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:34:35 +0000] "DELETE /employee/14 HTTP/1.1" 404 153 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:45:02 +0000] "DELETE /employee/14 HTTP/1.1" 404 153 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:46:52 +0000] "DELETE /employee/14 HTTP/1.1" 404 153 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:47:13 +0000] "DELETE /employee/14 HTTP/1.1" 404 153 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:47:18 +0000] "DELETE /employee/14 HTTP/1.1" 404 153 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:50:53 +0000] "DELETE /employee/14 HTTP/1.1" 404 153 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:51:32 +0000] "GET /employees HTTP/1.1" 200 1898 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:52:01 +0000] "DELETE /employee/14 HTTP/1.1" 404 153 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:53:35 +0000] "DELETE /employee/14 HTTP/1.1" 404 153 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:57:09 +0000] "DELETE /employee/14 HTTP/1.1" 404 153 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:59:18 +0000] "DELETE /employee/14 HTTP/1.1" 403 62 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:17:59:30 +0000] "DELETE /employee/14 HTTP/1.1" 500 83 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:00:01 +0000] "GET /employees HTTP/1.1" 200 1898 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:13:11 +0000] "DELETE /employee/14 HTTP/1.1" 201 73 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:15:09 +0000] "DELETE /employee/14 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+      at new NodeError (node:internal/errors:371:5)
+      at ServerResponse.setHeader (node:_http_outgoing:576:11)
+      at ServerResponse.header (C:\Users\HP\Downloads\Project Iseng\crud\node_modules\express\lib\response.js:776:10)
+      at ServerResponse.send (C:\Users\HP\Downloads\Project Iseng\crud\node_modules\express\lib\response.js:170:12)
+      at ServerResponse.json (C:\Users\HP\Downloads\Project Iseng\crud\node_modules\express\lib\response.js:267:15)
+      at C:\Users\HP\Downloads\Project Iseng\crud\dist\controllers\userController.js:319:33
+      at Generator.next (<anonymous>)
+      at fulfilled (C:\Users\HP\Downloads\Project Iseng\crud\dist\controllers\userController.js:24:58)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    code: 'ERR_HTTP_HEADERS_SENT'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Cannot set headers after they are sent to the client\n' +
+    'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at new NodeError (node:internal/errors:371:5)\n' +
+    '    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n' +
+    '    at ServerResponse.header (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:776:10)\n' +
+    '    at ServerResponse.send (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:319:33\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:24:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  stack: 'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at new NodeError (node:internal/errors:371:5)\n' +
+    '    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n' +
+    '    at ServerResponse.header (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:776:10)\n' +
+    '    at ServerResponse.send (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:319:33\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:24:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  exception: true,
+  date: 'Tue Feb 15 2022 01:15:09 GMT+0700 (Western Indonesia Time)',
+  process: {
+    pid: 9660,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.13.1',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\app.js'
+    ],
+    memoryUsage: {
+      rss: 46895104,
+      heapTotal: 28991488,
+      heapUsed: 11435424,
+      external: 898614,
+      arrayBuffers: 92120
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 26359 },
+  trace: [
+    {
+      column: 5,
+      file: 'node:internal/errors',
+      function: 'new NodeError',
+      line: 371,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:_http_outgoing',
+      function: 'ServerResponse.setHeader',
+      line: 576,
+      method: 'setHeader',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.header',
+      line: 776,
+      method: 'header',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.send',
+      line: 170,
+      method: 'send',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.json',
+      line: 267,
+      method: 'json',
+      native: false
+    },
+    {
+      column: 33,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js',
+      function: null,
+      line: 319,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Generator.next',
+      line: null,
+      method: 'next',
+      native: false
+    },
+    {
+      column: 58,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js',
+      function: 'fulfilled',
+      line: 24,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 96,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  message: '::1 - - [14/Feb/2022:18:24:56 +0000] "DELETE /employee/14 HTTP/1.1" 404 65 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:25:00 +0000] "DELETE /employee/14 HTTP/1.1" 404 65 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:25:59 +0000] "DELETE /employee/15 HTTP/1.1" 404 65 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:26:17 +0000] "DELETE /employee/13 HTTP/1.1" 201 73 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:26:30 +0000] "GET /employees HTTP/1.1" 200 1898 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:30:54 +0000] "DELETE /employee/15 HTTP/1.1" 404 65 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:31:22 +0000] "DELETE /employee/15 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:31:31 +0000] "DELETE /employee/13 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:32:43 +0000] "DELETE /employee/15 HTTP/1.1" 403 62 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:33:06 +0000] "DELETE /employee/19 HTTP/1.1" 403 62 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:33:20 +0000] "DELETE /employee/19 HTTP/1.1" 404 65 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:33:41 +0000] "DELETE /employee/19 HTTP/1.1" 404 65 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:34:03 +0000] "DELETE /employee/15 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:34:48 +0000] "GET /employees HTTP/1.1" 200 1898 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:35:06 +0000] "DELETE /employee/15 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:37:02 +0000] "DELETE /employee/15 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:37:39 +0000] "DELETE /employee/20 HTTP/1.1" 403 62 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:37:42 +0000] "DELETE /employee/20 HTTP/1.1" 404 65 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:37:47 +0000] "DELETE /employee/13 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:38:00 +0000] "DELETE /employee/15 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:38:33 +0000] "DELETE /employee/15 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:39:06 +0000] "DELETE /employee/20 HTTP/1.1" 403 62 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:39:09 +0000] "DELETE /employee/20 HTTP/1.1" 404 65 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:39:16 +0000] "DELETE /employee/13 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:39:20 +0000] "DELETE /employee/15 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:40:14 +0000] "DELETE /employee/20 HTTP/1.1" 403 62 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:40:30 +0000] "DELETE /employee/20 HTTP/1.1" 404 65 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:40:38 +0000] "DELETE /employee/13 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+      at new NodeError (node:internal/errors:371:5)
+      at ServerResponse.setHeader (node:_http_outgoing:576:11)
+      at ServerResponse.header (C:\Users\HP\Downloads\Project Iseng\crud\node_modules\express\lib\response.js:776:10)
+      at ServerResponse.send (C:\Users\HP\Downloads\Project Iseng\crud\node_modules\express\lib\response.js:170:12)
+      at ServerResponse.json (C:\Users\HP\Downloads\Project Iseng\crud\node_modules\express\lib\response.js:267:15)
+      at C:\Users\HP\Downloads\Project Iseng\crud\dist\controllers\userController.js:327:33
+      at Generator.throw (<anonymous>)
+      at rejected (C:\Users\HP\Downloads\Project Iseng\crud\dist\controllers\userController.js:25:65)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    code: 'ERR_HTTP_HEADERS_SENT'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Cannot set headers after they are sent to the client\n' +
+    'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at new NodeError (node:internal/errors:371:5)\n' +
+    '    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n' +
+    '    at ServerResponse.header (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:776:10)\n' +
+    '    at ServerResponse.send (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:327:33\n' +
+    '    at Generator.throw (<anonymous>)\n' +
+    '    at rejected (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:25:65)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  stack: 'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at new NodeError (node:internal/errors:371:5)\n' +
+    '    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n' +
+    '    at ServerResponse.header (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:776:10)\n' +
+    '    at ServerResponse.send (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:327:33\n' +
+    '    at Generator.throw (<anonymous>)\n' +
+    '    at rejected (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:25:65)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  exception: true,
+  date: 'Tue Feb 15 2022 01:40:38 GMT+0700 (Western Indonesia Time)',
+  process: {
+    pid: 10720,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.13.1',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\app.js'
+    ],
+    memoryUsage: {
+      rss: 40013824,
+      heapTotal: 13524992,
+      heapUsed: 11780776,
+      external: 917257,
+      arrayBuffers: 109931
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 27888 },
+  trace: [
+    {
+      column: 5,
+      file: 'node:internal/errors',
+      function: 'new NodeError',
+      line: 371,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:_http_outgoing',
+      function: 'ServerResponse.setHeader',
+      line: 576,
+      method: 'setHeader',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.header',
+      line: 776,
+      method: 'header',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.send',
+      line: 170,
+      method: 'send',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.json',
+      line: 267,
+      method: 'json',
+      native: false
+    },
+    {
+      column: 33,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js',
+      function: null,
+      line: 327,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Generator.throw',
+      line: null,
+      method: 'throw',
+      native: false
+    },
+    {
+      column: 65,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js',
+      function: 'rejected',
+      line: 25,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 96,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  message: '::1 - - [14/Feb/2022:18:44:08 +0000] "DELETE /employee/1 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:44:12 +0000] "DELETE /employee/19 HTTP/1.1" 404 65 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:44:25 +0000] "DELETE /employee/15 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:44:30 +0000] "DELETE /employee/13 HTTP/1.1" 403 62 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:44:46 +0000] "DELETE /employee/14 HTTP/1.1" 404 65 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:44:50 +0000] "DELETE /employee/15 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:45:01 +0000] "DELETE /employee/15 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:45:10 +0000] "GET /employees HTTP/1.1" 200 1898 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:50:05 +0000] "GET /employees HTTP/1.1" 200 1898 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:50:22 +0000] "DELETE /employee/15 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+      at new NodeError (node:internal/errors:371:5)
+      at ServerResponse.setHeader (node:_http_outgoing:576:11)
+      at ServerResponse.header (C:\Users\HP\Downloads\Project Iseng\crud\node_modules\express\lib\response.js:776:10)
+      at ServerResponse.send (C:\Users\HP\Downloads\Project Iseng\crud\node_modules\express\lib\response.js:170:12)
+      at ServerResponse.json (C:\Users\HP\Downloads\Project Iseng\crud\node_modules\express\lib\response.js:267:15)
+      at C:\Users\HP\Downloads\Project Iseng\crud\dist\controllers\userController.js:327:33
+      at Generator.throw (<anonymous>)
+      at rejected (C:\Users\HP\Downloads\Project Iseng\crud\dist\controllers\userController.js:25:65)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    code: 'ERR_HTTP_HEADERS_SENT'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Cannot set headers after they are sent to the client\n' +
+    'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at new NodeError (node:internal/errors:371:5)\n' +
+    '    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n' +
+    '    at ServerResponse.header (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:776:10)\n' +
+    '    at ServerResponse.send (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:327:33\n' +
+    '    at Generator.throw (<anonymous>)\n' +
+    '    at rejected (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:25:65)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  stack: 'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at new NodeError (node:internal/errors:371:5)\n' +
+    '    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n' +
+    '    at ServerResponse.header (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:776:10)\n' +
+    '    at ServerResponse.send (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:327:33\n' +
+    '    at Generator.throw (<anonymous>)\n' +
+    '    at rejected (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:25:65)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  exception: true,
+  date: 'Tue Feb 15 2022 01:50:22 GMT+0700 (Western Indonesia Time)',
+  process: {
+    pid: 2724,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.13.1',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\app.js'
+    ],
+    memoryUsage: {
+      rss: 38932480,
+      heapTotal: 13000704,
+      heapUsed: 11800448,
+      external: 917878,
+      arrayBuffers: 111320
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 28472 },
+  trace: [
+    {
+      column: 5,
+      file: 'node:internal/errors',
+      function: 'new NodeError',
+      line: 371,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:_http_outgoing',
+      function: 'ServerResponse.setHeader',
+      line: 576,
+      method: 'setHeader',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.header',
+      line: 776,
+      method: 'header',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.send',
+      line: 170,
+      method: 'send',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.json',
+      line: 267,
+      method: 'json',
+      native: false
+    },
+    {
+      column: 33,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js',
+      function: null,
+      line: 327,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Generator.throw',
+      line: null,
+      method: 'throw',
+      native: false
+    },
+    {
+      column: 65,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js',
+      function: 'rejected',
+      line: 25,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 96,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  message: '::1 - - [14/Feb/2022:18:55:56 +0000] "DELETE /employee/13 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:56:04 +0000] "DELETE /employee/14 HTTP/1.1" 404 65 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:56:07 +0000] "DELETE /employee/15 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:56:16 +0000] "DELETE /employee/15 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:57:37 +0000] "DELETE /employee/14 HTTP/1.1" 404 65 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:57:40 +0000] "DELETE /employee/13 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:57:48 +0000] "DELETE /employee/15 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:57:49 +0000] "DELETE /employee/15 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:59:02 +0000] "DELETE /employee/15 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:59:09 +0000] "DELETE /employee/4 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:59:12 +0000] "DELETE /employee/14 HTTP/1.1" 404 65 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:18:59:21 +0000] "DELETE /employee/14 HTTP/1.1" 403 62 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+      at new NodeError (node:internal/errors:371:5)
+      at ServerResponse.setHeader (node:_http_outgoing:576:11)
+      at ServerResponse.header (C:\Users\HP\Downloads\Project Iseng\crud\node_modules\express\lib\response.js:776:10)
+      at ServerResponse.send (C:\Users\HP\Downloads\Project Iseng\crud\node_modules\express\lib\response.js:170:12)
+      at ServerResponse.json (C:\Users\HP\Downloads\Project Iseng\crud\node_modules\express\lib\response.js:267:15)
+      at C:\Users\HP\Downloads\Project Iseng\crud\dist\controllers\userController.js:329:33
+      at Generator.throw (<anonymous>)
+      at rejected (C:\Users\HP\Downloads\Project Iseng\crud\dist\controllers\userController.js:25:65)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    code: 'ERR_HTTP_HEADERS_SENT'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Cannot set headers after they are sent to the client\n' +
+    'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at new NodeError (node:internal/errors:371:5)\n' +
+    '    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n' +
+    '    at ServerResponse.header (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:776:10)\n' +
+    '    at ServerResponse.send (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:329:33\n' +
+    '    at Generator.throw (<anonymous>)\n' +
+    '    at rejected (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:25:65)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  stack: 'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at new NodeError (node:internal/errors:371:5)\n' +
+    '    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n' +
+    '    at ServerResponse.header (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:776:10)\n' +
+    '    at ServerResponse.send (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:329:33\n' +
+    '    at Generator.throw (<anonymous>)\n' +
+    '    at rejected (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:25:65)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  exception: true,
+  date: 'Tue Feb 15 2022 01:59:21 GMT+0700 (Western Indonesia Time)',
+  process: {
+    pid: 18964,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.13.1',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\app.js'
+    ],
+    memoryUsage: {
+      rss: 39002112,
+      heapTotal: 12738560,
+      heapUsed: 12146248,
+      external: 932954,
+      arrayBuffers: 123644
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 29012 },
+  trace: [
+    {
+      column: 5,
+      file: 'node:internal/errors',
+      function: 'new NodeError',
+      line: 371,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:_http_outgoing',
+      function: 'ServerResponse.setHeader',
+      line: 576,
+      method: 'setHeader',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.header',
+      line: 776,
+      method: 'header',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.send',
+      line: 170,
+      method: 'send',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.json',
+      line: 267,
+      method: 'json',
+      native: false
+    },
+    {
+      column: 33,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js',
+      function: null,
+      line: 329,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Generator.throw',
+      line: null,
+      method: 'throw',
+      native: false
+    },
+    {
+      column: 65,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js',
+      function: 'rejected',
+      line: 25,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 96,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  message: '::1 - - [14/Feb/2022:19:02:19 +0000] "DELETE /employee/14 HTTP/1.1" 404 65 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:19:02:22 +0000] "DELETE /employee/13 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:19:02:26 +0000] "DELETE /employee/15 HTTP/1.1" 403 112 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:19:05:19 +0000] "DELETE /employee/14 HTTP/1.1" 500 65 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+      at new NodeError (node:internal/errors:371:5)
+      at ServerResponse.setHeader (node:_http_outgoing:576:11)
+      at ServerResponse.header (C:\Users\HP\Downloads\Project Iseng\crud\node_modules\express\lib\response.js:776:10)
+      at ServerResponse.send (C:\Users\HP\Downloads\Project Iseng\crud\node_modules\express\lib\response.js:170:12)
+      at ServerResponse.json (C:\Users\HP\Downloads\Project Iseng\crud\node_modules\express\lib\response.js:267:15)
+      at C:\Users\HP\Downloads\Project Iseng\crud\dist\controllers\userController.js:330:33
+      at Generator.next (<anonymous>)
+      at fulfilled (C:\Users\HP\Downloads\Project Iseng\crud\dist\controllers\userController.js:24:58)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    code: 'ERR_HTTP_HEADERS_SENT'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Cannot set headers after they are sent to the client\n' +
+    'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at new NodeError (node:internal/errors:371:5)\n' +
+    '    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n' +
+    '    at ServerResponse.header (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:776:10)\n' +
+    '    at ServerResponse.send (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:330:33\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:24:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  stack: 'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at new NodeError (node:internal/errors:371:5)\n' +
+    '    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n' +
+    '    at ServerResponse.header (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:776:10)\n' +
+    '    at ServerResponse.send (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:330:33\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:24:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  exception: true,
+  date: 'Tue Feb 15 2022 02:05:19 GMT+0700 (Western Indonesia Time)',
+  process: {
+    pid: 11028,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.13.1',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\app.js'
+    ],
+    memoryUsage: {
+      rss: 38178816,
+      heapTotal: 12738560,
+      heapUsed: 11736200,
+      external: 927522,
+      arrayBuffers: 120964
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 29369 },
+  trace: [
+    {
+      column: 5,
+      file: 'node:internal/errors',
+      function: 'new NodeError',
+      line: 371,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:_http_outgoing',
+      function: 'ServerResponse.setHeader',
+      line: 576,
+      method: 'setHeader',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.header',
+      line: 776,
+      method: 'header',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.send',
+      line: 170,
+      method: 'send',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.json',
+      line: 267,
+      method: 'json',
+      native: false
+    },
+    {
+      column: 33,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js',
+      function: null,
+      line: 330,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Generator.next',
+      line: null,
+      method: 'next',
+      native: false
+    },
+    {
+      column: 58,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js',
+      function: 'fulfilled',
+      line: 24,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 96,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  message: '::1 - - [14/Feb/2022:19:06:46 +0000] "POST /register HTTP/1.1" 200 61 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:19:06:50 +0000] "GET /employees HTTP/1.1" 200 1898 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [14/Feb/2022:19:06:58 +0000] "DELETE /employee/15 HTTP/1.1" 500 65 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+      at new NodeError (node:internal/errors:371:5)
+      at ServerResponse.setHeader (node:_http_outgoing:576:11)
+      at ServerResponse.header (C:\Users\HP\Downloads\Project Iseng\crud\node_modules\express\lib\response.js:776:10)
+      at ServerResponse.send (C:\Users\HP\Downloads\Project Iseng\crud\node_modules\express\lib\response.js:170:12)
+      at ServerResponse.json (C:\Users\HP\Downloads\Project Iseng\crud\node_modules\express\lib\response.js:267:15)
+      at C:\Users\HP\Downloads\Project Iseng\crud\dist\controllers\userController.js:330:33
+      at Generator.next (<anonymous>)
+      at fulfilled (C:\Users\HP\Downloads\Project Iseng\crud\dist\controllers\userController.js:24:58)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    code: 'ERR_HTTP_HEADERS_SENT'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Cannot set headers after they are sent to the client\n' +
+    'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at new NodeError (node:internal/errors:371:5)\n' +
+    '    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n' +
+    '    at ServerResponse.header (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:776:10)\n' +
+    '    at ServerResponse.send (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:330:33\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:24:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  stack: 'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at new NodeError (node:internal/errors:371:5)\n' +
+    '    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n' +
+    '    at ServerResponse.header (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:776:10)\n' +
+    '    at ServerResponse.send (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:330:33\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:24:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  exception: true,
+  date: 'Tue Feb 15 2022 02:06:58 GMT+0700 (Western Indonesia Time)',
+  process: {
+    pid: 15292,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.13.1',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\app.js'
+    ],
+    memoryUsage: {
+      rss: 37982208,
+      heapTotal: 12738560,
+      heapUsed: 11199848,
+      external: 950316,
+      arrayBuffers: 66024
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 29468 },
+  trace: [
+    {
+      column: 5,
+      file: 'node:internal/errors',
+      function: 'new NodeError',
+      line: 371,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:_http_outgoing',
+      function: 'ServerResponse.setHeader',
+      line: 576,
+      method: 'setHeader',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.header',
+      line: 776,
+      method: 'header',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.send',
+      line: 170,
+      method: 'send',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.json',
+      line: 267,
+      method: 'json',
+      native: false
+    },
+    {
+      column: 33,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js',
+      function: null,
+      line: 330,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Generator.next',
+      line: null,
+      method: 'next',
+      native: false
+    },
+    {
+      column: 58,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js',
+      function: 'fulfilled',
+      line: 24,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 96,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  message: '::1 - - [15/Feb/2022:01:03:27 +0000] "POST /login HTTP/1.1" 200 370 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [15/Feb/2022:01:04:26 +0000] "PUT /employee/1 HTTP/1.1" 403 28 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+      at new NodeError (node:internal/errors:371:5)
+      at ServerResponse.setHeader (node:_http_outgoing:576:11)
+      at ServerResponse.header (C:\Users\HP\Downloads\Project Iseng\crud\node_modules\express\lib\response.js:776:10)
+      at ServerResponse.send (C:\Users\HP\Downloads\Project Iseng\crud\node_modules\express\lib\response.js:170:12)
+      at ServerResponse.json (C:\Users\HP\Downloads\Project Iseng\crud\node_modules\express\lib\response.js:267:15)
+      at C:\Users\HP\Downloads\Project Iseng\crud\dist\controllers\userController.js:276:33
+      at Generator.next (<anonymous>)
+      at C:\Users\HP\Downloads\Project Iseng\crud\dist\controllers\userController.js:27:71
+      at new Promise (<anonymous>)
+      at __awaiter (C:\Users\HP\Downloads\Project Iseng\crud\dist\controllers\userController.js:23:12) {
+    code: 'ERR_HTTP_HEADERS_SENT'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Cannot set headers after they are sent to the client\n' +
+    'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at new NodeError (node:internal/errors:371:5)\n' +
+    '    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n' +
+    '    at ServerResponse.header (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:776:10)\n' +
+    '    at ServerResponse.send (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:276:33\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:27:71\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at __awaiter (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:23:12)',
+  stack: 'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at new NodeError (node:internal/errors:371:5)\n' +
+    '    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n' +
+    '    at ServerResponse.header (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:776:10)\n' +
+    '    at ServerResponse.send (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:170:12)\n' +
+    '    at ServerResponse.json (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js:267:15)\n' +
+    '    at C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:276:33\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:27:71\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at __awaiter (C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js:23:12)',
+  exception: true,
+  date: 'Tue Feb 15 2022 08:04:26 GMT+0700 (Western Indonesia Time)',
+  process: {
+    pid: 13696,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.13.1',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\app.js'
+    ],
+    memoryUsage: {
+      rss: 38809600,
+      heapTotal: 12738560,
+      heapUsed: 11945312,
+      external: 930406,
+      arrayBuffers: 123016
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 50916 },
+  trace: [
+    {
+      column: 5,
+      file: 'node:internal/errors',
+      function: 'new NodeError',
+      line: 371,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:_http_outgoing',
+      function: 'ServerResponse.setHeader',
+      line: 576,
+      method: 'setHeader',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.header',
+      line: 776,
+      method: 'header',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.send',
+      line: 170,
+      method: 'send',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.json',
+      line: 267,
+      method: 'json',
+      native: false
+    },
+    {
+      column: 33,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js',
+      function: null,
+      line: 276,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Generator.next',
+      line: null,
+      method: 'next',
+      native: false
+    },
+    {
+      column: 71,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js',
+      function: null,
+      line: 27,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\HP\\Downloads\\Project Iseng\\crud\\dist\\controllers\\userController.js',
+      function: '__awaiter',
+      line: 23,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  message: '::1 - - [15/Feb/2022:02:39:59 +0000] "GET /employees HTTP/1.1" 200 1744 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
+{
+  message: '::1 - - [15/Feb/2022:02:40:14 +0000] "PUT /employee/12 HTTP/1.1" 403 80 "-" "PostmanRuntime/7.29.0"\n',
+  level: 'info'
+}
